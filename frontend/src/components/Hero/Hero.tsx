@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
         </div>
         <div className={styles.hero__illustration}>
           <div className={styles.hero__orbit}>
-            <img src="/public/img/Hero fon.png" alt="" />
+            <img src="./public/img/Hero_fon.png" alt="" />
           </div>
         </div>
       </div>
