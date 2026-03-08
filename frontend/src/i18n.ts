@@ -18,7 +18,13 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: `${import.meta.env.BASE_URL}locales/{{lng}}/translation.json`,
+      // Vite's BASE_URL may or may not end with a slash, so normalize it here
+      loadPath: (() => {
+        const base = import.meta.env.BASE_URL || '/';
+        const prefix = base.endsWith('/') ? base : `${base}/`;
+
+        return `${prefix}locales/{{lng}}/translation.json`;
+      })(),
     },
   });
 
