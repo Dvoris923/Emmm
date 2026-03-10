@@ -2,15 +2,14 @@
 
 .hero {
   width: 100%;
-  background: u.$main-gradient;
   display: flex;
   align-items: center;
   color: white;
+  padding-top: 80px;
 
   &__container {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;

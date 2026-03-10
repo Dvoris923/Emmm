@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import styles from './Hero.module.scss';
-import Hero_fon from '/public/img/Hero_fon.png';
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -28,8 +27,7 @@ export const Hero: React.FC = () => {
         </div>
         <div className={styles.hero__illustration}>
           <div className={styles.hero__orbit}>
-            {/* public assets are served from the base path without "/public" */}
-            <img src={Hero_fon} alt="Background" />
+            <img src="./public/img/Hero_fon.png" alt="" />
           </div>
         </div>
       </div>
