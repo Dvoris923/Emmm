@@ -6,8 +6,6 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-   base: '/react-emmm/',
-
   resolve: {
       alias: {
         // Створюємо аліас для зручного доступу до стилів

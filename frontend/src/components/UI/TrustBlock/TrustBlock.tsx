@@ -5,15 +5,15 @@ import { useTranslation } from 'react-i18next';
 const logos = [
   {
     id: 1,
-    src: './public/img/image 29.png',
+    src: './img/image29.png',
     alt: 'Speech Therapy',
   },
-  { id: 2, src: './public/img/image 30.png', alt: 'Therapy' },
-  { id: 3, src: './public/img/image 31.png', alt: 'Mental Health' },
-  { id: 4, src: './public/img/image 32.png', alt: 'Health' },
+  { id: 2, src: './img/image30.png', alt: 'Therapy' },
+  { id: 3, src: './img/image31.png', alt: 'Mental Health' },
+  { id: 4, src: './img/image32.png', alt: 'Health' },
   {
     id: 5,
-    src: './public/img/image 33.png',
+    src: './img/image33.png',
     alt: 'Speech Therapy Blue',
   },
 ];
@@ -23,13 +23,20 @@ export const TrustBlock: React.FC = () => {
 
   return (
     <div className={styles.trustBlock}>
-      <h2 className={styles.trustBlock__title}>{t('trust_title')}</h2>
-      <div className={styles.logos_grid}>
-        {logos.map(logo => (
-          <div key={logo.id} className={styles.logo_item}>
-            <img src={logo.src} alt={logo.alt} />
-          </div>
-        ))}
+      <h2
+        className="flex text-lg font-medium
+       justify-center "
+      >
+        {t('trust_title')}
+      </h2>
+      <div className="relative w-full overflow-hidden py-10">
+        <div className={styles.logos_track}>
+          {[...logos, ...logos].map((logo, index) => (
+            <div key={`${logo.id}-${index}`} className={styles.logo_item}>
+              <img src={logo.src} alt={logo.alt} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
