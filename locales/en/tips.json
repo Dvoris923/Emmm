@@ -5,10 +5,10 @@
     "title": "Useful tips",
     "description": "Choose a category to get personalized recommendations for improving your condition.",
     "categories": {
-      "breathing": "01 Breathing techniques",
-      "music": "02 Music recommendations",
-      "movies": "03 Inspiring movies",
-      "books": "04 Recommended books"
+      "breathing": " Breathing techniques",
+      "music": " Music recommendations",
+      "movies": " Inspiring movies",
+      "books": " Recommended books"
     },
     "items": {
       "breathing_478": {
