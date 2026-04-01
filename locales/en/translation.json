@@ -99,7 +99,7 @@
     "test_result": "Test Result",
     "recommendations": "Recommendations"
   },
-  "interests": {
+  "Hobbies": {
     "video_games": "Video Games",
     "reading": "Reading",
     "travel": "Travel",
@@ -121,6 +121,14 @@
   "Test_name" : "Name*" ,
   "Test_lastname" : "Last name (optional)" ,
   "Test_gender" : "Your gender*" ,
-  "Test_old" : "How old are you?*"
+  "Test_old" : "How old are you?*",
+  "Test_to_main" : "Back to Home ",
+  "Test_back" : "Back",
+  "Test_finish" : "Сomplete",
+  "Test_continue" : "Сontinue",
+  "Recomemendations_title" : "We have prepared a selection of recommendations for you that can help you better understand yourself and maintain emotional balance.",
+  "Recomemendations_Tips" : "Tips",
+  "Recomemendations_desc" : "Music can have a significant impact on our emotional state. Calm or inspiring compositions can help reduce stress, calm our thoughts, and create a sense of inner balance.",
+  "Recomemendations_desc1" : "Try spending a few minutes listening to music that makes you feel good or helps you relax."
 }
 
