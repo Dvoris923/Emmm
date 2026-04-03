@@ -18,7 +18,7 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/react-emmm/locales/{{lng}}/{{ns}}.json',
     },
     defaultNS: 'translation',
     ns: ['translation', 'tips'],
