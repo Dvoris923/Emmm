@@ -1,14 +1,23 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-
+import './i18n';
 import { App } from './App';
+import { MainPage } from './components/pages/MainPage';
+import { LoginPage } from './components/pages/Login';
+import { RegisterPage } from './components/pages/RegisterPage';
+import { TestPage } from './components/pages/TestPage';
+import Profile from './components/pages/Profile';
+import { ProfileTest } from './components/pages/ProfileTest';
 
 export const Root = () => (
   <Router>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route index element={<App />} />
-        <Route path="home" element={<App />} />
-        <Route path="phones" element={<App />} />
+        <Route index element={<MainPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/test" element={<TestPage />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/quiz" element={<ProfileTest />} />
       </Route>
     </Routes>
   </Router>

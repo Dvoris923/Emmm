@@ -1,6 +1,12 @@
 import { useTranslation } from 'react-i18next';
 
-export const LanguageSwitcher: React.FC = () => {
+type LanguageSwitcherProps = {
+  isLight: boolean;
+};
+
+export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
+  isLight,
+}) => {
   const { i18n } = useTranslation();
 
   const languages = [
@@ -17,14 +23,14 @@ export const LanguageSwitcher: React.FC = () => {
   return (
     <div className="flex items-center gap-2 px-2 py-1">
       <img
-        src="./../../../public/img/lg.png"
-        className="w-6 h-6"
+        src="./icons/Language.svg"
+        className={`w-6 h-6 ${isLight ? 'invert' : 'invert-0'}`}
         alt="lang icon"
       />
 
       <div
         className="flex items-center
-  text-[16px] leading-tight
+  text-[14px] leading-tight
   font-medium uppercase"
       >
         {languages.map((lang, index) => (
@@ -33,15 +39,23 @@ export const LanguageSwitcher: React.FC = () => {
               onClick={() => changeLanguage(lang.code)}
               className={`transition-colors duration-200 uppercase ${
                 currentLang === lang.code
-                  ? 'text-[#333] font-medium'
-                  : 'text-[#ccc]'
+                  ? isLight
+                    ? 'text-gray-80 font-medium'
+                    : 'text-gray-0 font-medium'
+                  : isLight
+                    ? 'text-gray-40 font-medium'
+                    : 'text-gray-20 font-medium'
               }`}
               type="button"
             >
               {lang.name}
             </button>
             {index < languages.length - 1 && (
-              <span className="mx-1 text-[#333] font-light">/</span>
+              <span
+                className={`mx-1 font-light ${isLight ? 'text-gray-80' : 'text-gray-0'}`}
+              >
+                /
+              </span>
             )}
           </div>
         ))}
