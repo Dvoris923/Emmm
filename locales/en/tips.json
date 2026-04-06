@@ -2,6 +2,9 @@
   "TipsSection_title" : "Tips and general recommendations",
   "TipsSection_description" : "Explore our collection of wellness resources designed to improve your emotional well-being, reduce stress, and support your mental health.",
   "Health_resources" : "Health resources",
+  "Recommendations" : "Recommendations",
+  "Recommendations_deck" : "We have selected content and techniques specifically for your personality type.",
+  "Recommendations_Review" : "Review",
   "TipsSection": {
     "title": "Useful tips",
     "description": "Choose a category to get personalized recommendations for improving your condition.",
