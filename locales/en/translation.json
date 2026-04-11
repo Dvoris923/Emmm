@@ -131,6 +131,7 @@
   "Test_finish" : "Сomplete",
   "Test_continue" : "Сontinue",
   "Test_Completed" : "Completed!",
+  "Test_Completed_Again" : "Go through again",
   "Test_Go_Again" : "Go through again",
    "Test_test" : "Initial test",
   "Test_Not_finished" : "Not finished!",
