@@ -100,6 +100,9 @@
   "Register_your_city" : "Enter your city (optional)",
   "Register_hobbies" : "What are your hobbies? (optional)",
   "Register_cities" : "Lviv, Kyiv, Uzhhorod...",
+  "Register_password_" : "Password",
+  "Register_Input_passwordC" : "Confirm password",
+
   "steps": {
     "personal_data": "Personal Data",
     "quiz": "Quiz Questions",
@@ -146,6 +149,7 @@
   "Recomemendations_desc1" : "Try spending a few minutes listening to music that makes you feel good or helps you relax.",
   "Profile_Delight" : "Delight",
   "Profile_years" : "years",
+  "Profile_specified" : "Not specified",
 
 "Error_required_fullName": "Please enter your full name",
   "Error_required_email": "Email is required",
